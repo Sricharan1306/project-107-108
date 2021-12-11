@@ -1,0 +1,224 @@
+
+<html>
+  <head>
+    <title>Sound Identification Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia&family=Meow+Script&family=Nunito+Sans:wght@300&family=Playfair+Display:ital@1&family=Readex+Pro:wght@300&family=Roboto+Mono:wght@200&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia&family=Playfair+Display:ital@1&family=Readex+Pro:wght@300&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia&family=Meow+Script&family=Nunito+Sans:wght@300&family=Playfair+Display:ital@1&family=Readex+Pro:wght@300&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia&family=Meow+Script&family=Nunito+Sans:wght@300&family=Playfair+Display:ital@1&family=Readex+Pro:wght@300&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+      <center>
+<div class="div_header col-xs-12" id="head">
+  <p id="main_heading">Sound controlled animals</p>
+  <br>
+   <marquee id="information2">
+     *I've given many informations about these animals below this website.
+   </marquee>
+</div>
+<br>
+<br>
+<div class="main_pictures" id="body2">
+  <button class="btn-primary" id="getvoice">Start</button>
+  <br>
+  <h3 id="get">Voice=<span id="result"></span></h3>
+  <br>
+  <h3 id="get2">Accuracy=<span id="result_accuracy"></span></h3>
+  <br>
+  <span>
+  <h3 id="get3">Detected cat=<span id="result_cat"></span></h3>
+  <h3 id="get4">Detected dog=<span id="result_dog"></span></h3>
+  <h3 id="get5">Detected lion=<span id="result_lion"></span></h3>
+  <h3 id="get6">Detected tiger=<span id="result_tiger"></span></h3>
+  </span>
+  <br>
+  <br>
+  <span id="animal_image">
+
+  <img id="image_2" width="300" height="350">
+  <img src="listen.gif" width="300" id="image_1" height="350">
+  <img id="image_3" width="300" height="350">
+  <img id="image_4" width="300" height="350">
+  </span>
+</div> 
+<br>
+<br>   
+<div class="page-header" id="movies">
+  <h2 class="text-capitalize">Lion</h2>
+
+<div class="bg-primary movie_head" data-toggle="collapse" data-target="#avengers_endgame"> <span class="glyphicon glyphicon-film"></span> Click me to know more about Lions<i class="fa fa-sort-desc"></i> </div>
+<div id="avengers_endgame" class="collapse">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+      <h5 class="text-success text-left text-capitalize">
+        <iframe width="715" height="380" src="https://en.wikipedia.org/wiki/Lion" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </h5>
+      </div>
+      <br>
+      <br>
+      <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="div2">
+        <h2 class="text-capitalize ">About tigers</h2>
+         </div>
+       
+       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+           
+        
+         <h4>
+           <mark  class="header_entrepreneur">
+           <i>
+              <sup><i class="fa fa-quote-left"> </i></sup>
+           More information about tiger
+             <sup><i class="fa fa-quote-right"></i></sup>
+             </i>
+           </mark>
+         </h4>
+       
+       </div>
+       
+         </div>
+         <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
+           <h2 class="text-capitalize ">Tiger</h2>
+       </div>
+     
+       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book"  data-toggle="modal" data-target="#First_Space_Encyclopaedia">
+         <img src="tiger.jpg" class="img-responsive">
+         <hr >
+         <p class="text-danger">Click on the image above</p>
+ </div>
+     <div class="modal fade" id="First_Space_Encyclopaedia">
+         <div class="modal-dialog">
+             <div class="modal-content" >
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" height="3500">&times;</button>
+               <h4 class="modal-title">About tigers</h4>
+             </div>
+             <h5 class="text-warning text-left text-capitalize">
+        
+               
+             <p>The tiger (Panthera tigris) is the largest living cat species and a member of the genus Panthera. It is most recognisable for its dark vertical stripes on orange fur with a white underside. An apex predator, it primarily preys on ungulates such as deer and wild boar. It is territorial and generally a solitary but social predator, requiring large contiguous areas of habitat, which support its requirements for prey and rearing of its offspring. Tiger cubs stay with their mother for about two years, then become independent and leave their mother's home range to establish their own.
+
+              The tiger was first scientifically described in 1758 and once ranged widely from the Eastern Anatolia Region in the west to the Amur River basin in the east, and in the south from the foothills of the Himalayas to Bali in the Sunda Islands. Since the early 20th century, tiger populations have lost at least 93% of their historic range and have been extirpated from Western and Central Asia, the islands of Java and Bali, and in large areas of Southeast and South Asia and China. Today, the tiger's range is fragmented, stretching from Siberian temperate forests to subtropical and tropical forests on the Indian subcontinent, Indochina and Sumatra.
+              
+              The tiger is listed as Endangered on the IUCN Red List. As of 2015, the global wild tiger population was estimated to number between 3,062 and 3,948 mature individuals, with most of the populations living in small isolated pockets. India currently hosts the largest tiger population. Major reasons for population decline are habitat destruction, habitat fragmentation and poaching. Tigers are also victims of human–wildlife conflict, particularly in range countries with a high human population density.
+              
+              The tiger is among the most recognisable and popular of the world's charismatic megafauna. It featured prominently in the ancient mythology and folklore of cultures throughout its historic range, and continues to be depicted in modern films and literature, appearing on many flags, coats of arms and as mascots for sporting teams. The tiger is the national animal of India, Bangladesh, Malaysia and South Korea.
+            </p>
+            </h5>
+            </div>
+            </div>
+            </div>
+            </div>
+            <br>
+            <br>
+            <div class="color" id="Dogs">
+          
+            <li class="list-group-item list-group-item-warning col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li" >
+              <h2>About Dogs</h2>
+              <h4>Dogs</h4>
+        <img src="dog.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12" >
+        <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12" id="take">The dog or domestic dog, (Canis familiaris[4][5] or Canis lupus familiaris[5]) is a domesticated descendant of the wolf which is characterized by an upturning tail. The dog derived from an ancient, extinct wolf,[6][7] and the modern grey wolf is the dog's nearest living relative.[8] The dog was the first species to be domesticated,[9][8] by hunter–gatherers over 15,000 years ago,[7] before the development of agriculture.[1]
+
+          Due to their long association with humans, dogs have expanded to a large number of domestic individuals[10] and gained the ability to thrive on a starch-rich diet that would be inadequate for other canids.[11] Over the millennia, dogs became uniquely adapted to human behavior, and the human-canine bond has been a topic of frequent study.[12]
+          
+          The dog has been selectively bred over millennia for various behaviors, sensory capabilities, and physical attributes.[13] Dog breeds vary widely in shape, size, and color. They perform many roles for humans, such as hunting, herding, pulling loads, protection, assisting police and the military, companionship, therapy, and aiding disabled people. This influence on human society has given them the sobriquet of "man's best friend."</p>
+       </li>
+           </div> 
+           <br>
+           <br>
+           <br>
+           <br>
+           <div class="color2" id="cats">
+            <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li" >
+              <h2>About Cats</h2>
+              <h4>Cats</h4>
+              <img src="Cat03.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12" >
+              <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12" >The cat (Felis catus) is a domestic species of small carnivorous mammal.[1][2] It is the only domesticated species in the family Felidae and is often referred to as the domestic cat to distinguish it from the wild members of the family.[4] A cat can either be a house cat, a farm cat or a feral cat; the latter ranges freely and avoids human contact.[5] Domestic cats are valued by humans for companionship and their ability to kill rodents. About 60 cat breeds are recognized by various cat registries.[6]
+
+                The cat is similar in anatomy to the other felid species: it has a strong flexible body, quick reflexes, sharp teeth and retractable claws adapted to killing small prey. Its night vision and sense of smell are well developed. Cat communication includes vocalizations like meowing, purring, trilling, hissing, growling and grunting as well as cat-specific body language. A predator that is most active at dawn and dusk (crepuscular), the cat is a solitary hunter but a social species. It can hear sounds too faint or too high in frequency for human ears, such as those made by mice and other small mammals.[7] It secretes and perceives pheromones.[8]
+                
+                Female domestic cats can have kittens from spring to late autumn, with litter sizes often ranging from two to five kittens.[9] Domestic cats are bred and shown at events as registered pedigreed cats, a hobby known as cat fancy. Population control of cats may be effected by spaying and neutering, but their proliferation and the abandonment of pets has resulted in large numbers of feral cats worldwide, contributing to the extinction of entire bird, mammal, and reptile species.[10]
+                
+                Cats were first domesticated in the Near East around 7500 BC.[11] It was long thought that cat domestication began in ancient Egypt, where cats were venerated from around 3100 BC.[12][13] As of 2021, there are an estimated 220 million owned and 480 million stray cats in the world.[14][15] As of 2017, the domestic cat was the second-most popular pet in the United States, with 95 million cats owned.[16][17][18] In the United Kingdom, 26% of adults have a cat with an estimated population of 10.9 million pet cats as of 2020.[19]</p>
+             </li>
+           </div>
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+  <button class="btn-danger" id="download">Download pictures of these animals</button>
+</center>
+<script src="main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+ 
+
